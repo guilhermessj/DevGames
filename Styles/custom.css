@@ -1,0 +1,15 @@
+@media (max-width:768px){
+    .navbar-collapse.collapse-from-right{
+        position: fixed;
+        right: -100%;
+        top:55px;
+        bottom: 0;
+        width: 50%;
+        z-index: 1000;
+        transition: right 0.3s ease;
+    }
+
+    .navbar-collapse.collapse{
+        right: 0;
+    }
+}
