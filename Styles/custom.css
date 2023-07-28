@@ -1,15 +1,20 @@
-@media (max-width:768px){
-    .navbar-collapse.collapse-from-right{
-        position: fixed;
-        right: -100%;
-        top:55px;
-        bottom: 0;
-        width: 50%;
-        z-index: 1000;
-        transition: right 0.3s ease;
+@media (max-width:767px){    
+    /* Button */
+
+    #button-modified{
+        display: grid;
+        grid-template-columns: repeat(1, 35px);
+        grid-template-rows: repeat(3, 5px);
+        border-radius: 4px;
+        gap: 5px;
     }
 
-    .navbar-collapse.collapse{
-        right: 0;
+    .modified-toggler-icon{
+        width: 35px;
+        height: 5px;
+        border-radius: 2px;
+        background-color: white;
     }
+
+    /* Button */
 }
