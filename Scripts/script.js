@@ -1,9 +1,16 @@
-const navbar = document.querySelector(".collapse-from-right")
+// Toggle button and navbar
+
+const navbar = document.querySelector(".mobile-nav")
 const btnToggle = document.querySelector("#button-modified")
 
-btnToggle.addEventListener.forEach(n =>
-    n.addEventListener('click', () =>{
-        navbar.classList.remove("show")
-        btnToggle.classList.remove("show")
-    })
-    )
+btnToggle.addEventListener("click", ()=>{
+    btnToggle.classList.toggle("active")
+    navbar.classList.toggle("active")
+})
+
+btnToggle.querySelector(".mobile-nav").forEach(n => n.addEventListener('click', () =>{
+    btnToggle.classList.remove("active")
+    navbar.classList.remove("active")
+}))
+
+// Toggle button and navbar

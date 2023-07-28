@@ -1,6 +1,42 @@
-@media (max-width:767px){    
-    /* Button */
+@media (max-width:767px){
+    .mobile-nav{
+        position: fixed;
+        width: 50%;
+        right:-100%;
+        bottom: 0;
+        top: 58px;
+        transition: right 0.4s ease-out;
+    }
 
+    .mobile-nav.active{
+        right: 0;
+    }
+    
+    .navlist-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 100px);
+        grid-template-rows: repeat(2, 50px);
+        justify-content: space-around;
+    }
+
+
+
+    /* Button */
+    
+    #button-modified.active span:nth-of-type(1){
+      
+        transform: translateY(8px) rotate(45deg)
+    }
+
+    #button-modified.active span:nth-of-type(2){
+        opacity: 0;
+    }
+
+    #button-modified.active span:nth-of-type(3){
+     
+        transform: translateY(-11px) rotate(-48deg);
+    }
+    
     #button-modified{
         display: grid;
         grid-template-columns: repeat(1, 35px);
@@ -14,6 +50,7 @@
         height: 5px;
         border-radius: 2px;
         background-color: white;
+        transition: 0.4s;
     }
 
     /* Button */
